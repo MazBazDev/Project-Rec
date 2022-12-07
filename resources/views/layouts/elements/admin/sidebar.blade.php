@@ -1,11 +1,8 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-    </a>
+   <div class="d-flex justify-content-center p-2">
+        <img style="max-height: 70px;" class="my-2 img-fluid" src="{{ asset("assets/img/logo.svg")}}" alt="" >
+   </div>
 
     <hr class="sidebar-divider my-0">
 
@@ -37,9 +34,9 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span>
+        <a class="nav-link" href="{{ route("admin.settings.index") }}">
+            <i class="fas fa-cogs"></i>
+            <span>Settings</span>
         </a>
     </li>
 

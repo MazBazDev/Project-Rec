@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('admin.index');
 })->name('index');
+
+Route::get('/settings', function () {
+    
+})->name('settings.index');
+
+Route::resource("settings", SettingsController::class, [
+    'except' => ['create', "destroy", "update", "show", "edit", "destroy"]
+]);

@@ -19,7 +19,6 @@
     @stack('styles')
 
     @stack('scripts')
-
 </head>
 
 <body id="page-top">
@@ -32,6 +31,7 @@
                 @include("layouts.elements.admin.nav")
 
                 <div class="container-fluid">
+                    <h4 class="mb-3">@yield('title')</h4>
                     @yield('content')
                 </div>
             </div>

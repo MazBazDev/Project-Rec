@@ -17,4 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/contact-us', function () {
+    return view('welcome');
+});
 
+Route::get('/legal', function () {
+    return view('welcome');
+});
+
+Route::get('/faq', function () {
+    return view('welcome');
+});
+
+Route::get('/team', function () {
+    return view('welcome');
+});
