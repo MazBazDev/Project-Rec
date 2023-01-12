@@ -40,6 +40,13 @@
         </a>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route("admin.staff.index") }}">
+            <i class="fas fa-user-plus"></i>
+            <span>Staff / Partenaires</span>
+        </a>
+    </li>
+
     <hr class="sidebar-divider d-none d-md-block">
 
     <div class="text-center d-none d-md-inline">

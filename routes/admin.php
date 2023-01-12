@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,4 +25,8 @@ Route::get('/settings', function () {
 
 Route::resource("settings", SettingsController::class, [
     'except' => ['create', "destroy", "update", "show", "edit", "destroy"]
+]);
+
+Route::resource("staff", StaffController::class, [
+    'except' => ["show"]
 ]);
