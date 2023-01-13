@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\MoviesController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,18 +19,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.index');
-})->name('index');
-
-Route::get('/settings', function () {
-    
-})->name('settings.index');
+Route::get('/', [AdminController::class, "index"])->name('index');
 
 Route::resource("settings", SettingsController::class, [
     'except' => ['create', "destroy", "update", "show", "edit", "destroy"]
 ]);
 
 Route::resource("staff", StaffController::class, [
+    'except' => ["show"]
+]);
+
+Route::resource("users", UsersController::class, [
+    'except' => ["show"]
+]);
+
+Route::resource("booking", BookingController::class, [
+    'except' => ["show"]
+]);
+
+Route::resource("movies", MoviesController::class, [
     'except' => ["show"]
 ]);

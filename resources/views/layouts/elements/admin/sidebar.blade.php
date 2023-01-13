@@ -1,13 +1,13 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-   <div class="d-flex justify-content-center p-2">
+    <a href="{{ route('home') }}" class="d-flex justify-content-center p-2">
         <img style="max-height: 70px;" class="my-2 img-fluid" src="{{ asset("assets/img/logo.svg")}}" alt="" >
-   </div>
+    </a>
 
     <hr class="sidebar-divider my-0">
 
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ route("admin.index") }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
@@ -16,7 +16,7 @@
     <hr class="sidebar-divider">
 
     <div class="sidebar-heading">
-        Addons
+        Admin
     </div>
 
     <li class="nav-item">
@@ -47,6 +47,30 @@
         </a>
     </li>
 
+    <hr class="sidebar-divider d-none d-md-block">
+    
+    <div class="sidebar-heading">
+        Gestion
+    </div>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route("admin.users.index") }}">
+            <i class="fas fa-users"></i>
+            <span>Utilisateurs</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route("admin.booking.index") }}">
+            <i class="fas fa-ticket-alt"></i>
+            <span>Réservations</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route("admin.movies.index") }}">
+            <i class="fas fa-video"></i>
+            <span>Court-métrages</span>
+        </a>
+    </li>
     <hr class="sidebar-divider d-none d-md-block">
 
     <div class="text-center d-none d-md-inline">

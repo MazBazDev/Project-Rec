@@ -7,9 +7,8 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
-            </div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptate animi nesciunt deleniti provident dolore perferendis magni tempora, voluptas repellat eligendi? Ipsa, placeat! Recusandae adipisci sint eius, dolores ab sunt?
+
         </div>
     </div>
 </x-app-layout>
