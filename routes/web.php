@@ -23,22 +23,6 @@ Route::get('/maintenance', function () {
 
 Route::middleware(['maintenance'])->group(function () {
     Route::get('/', function () {
-        return view('pages.welcome');
+        return view('guest.index');
     })->name("home");
-    
-    Route::get('/contact-us', function () {
-        return view('pages.welcome');
-    });
-    
-    Route::get('/legal', function () {
-        return view('pages.welcome');
-    });
-    
-    Route::get('/faq', function () {
-        return view('pages.welcome');
-    });
-    
-    Route::get('/team', function () {
-        return view('pages.welcome');
-    });
 });
