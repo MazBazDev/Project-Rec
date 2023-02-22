@@ -7,8 +7,8 @@
       <span></span>
 
       <!-- logo -->
-      <a href="#section1" class="menu-logo">
-        <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website" />
+      <a href="#" class="menu-logo">
+        <img src="{{ asset("assets/img/logo_white.svg") }}" alt="">
       </a>
 
       <!-- menu items -->
@@ -16,34 +16,27 @@
         <ul>
           <!-- logo -->
           <li class="phone-logo">
-            <a href="#section1">
-              <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png"alt="My Awesome Website" />
+            <a href="#">
+              <img src="{{ asset("assets/img/logo_white.svg") }}" alt="">
             </a>
           </li>
           <li>
-            <a href="#section2">
-              à l'affiche
-            </a>
+            <a href="#section2">La selection</a>
           </li>
           <li>
-            <a href="#section3">
-              Nous soutenir
-            </a>
+            <a href="#section3">Nous soutenir</a>
           </li>
           <li>
-            <a href="#blog">
-              Nos partenaires
-            </a>
+            <a href="#section4">Le festival</a>
           </li>
           <li>
-            <a href="#section4">
-              Lieux & Dates
-            </a>
+            <a href="#section5">Partenaires</a>
           </li>
           <li>
-            <a href="#faq">
-              FAQ
-            </a>
+            <a href="#section6">MakeIt</a>
+          </li>
+          <li>
+            <a href="#section7">FAQ</a>
           </li>
         </ul>
       </div>
