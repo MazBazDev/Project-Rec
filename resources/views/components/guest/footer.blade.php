@@ -11,7 +11,7 @@
                     <li><a href="#onDisplay">Mentions légales</a></li>
                     <li><a href="#section3">Nous soutenir</a></li>
                     <li><a href="">Espace presse / pro</a></li>
-                    <li><a href="">Devenir partenaire</a></li>
+                    <li><a href="#section5">Devenir partenaire</a></li>
                 </ul>
                 <div class="link">
                     <a href="" class="btn">Inscrivez votre film</a>
