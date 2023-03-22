@@ -45,6 +45,9 @@
     display: flex;
 }
 
+.d-block {
+    display: block;
+}
 .text-center {
     text-align: center;
 }
@@ -494,3 +497,13 @@ section .row:after {
         justify-content: center;
     }
 }  
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img, svg {
+    vertical-align: middle;
+}

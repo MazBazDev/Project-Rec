@@ -32,5 +32,8 @@
     @include("components.guest.footer")
 
     @stack('footer-scripts')
+
+    @stack('styles')
+
 </body>
 </html>

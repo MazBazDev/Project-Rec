@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Poster;
 use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
@@ -10,7 +11,8 @@ class HomeController extends Controller
     {
         $this->getUluleProjectDatas();
         return view('guest.welcome', [
-            "ulule" => $this->getUluleProjectDatas()
+            "ulule" => $this->getUluleProjectDatas(),
+            "posters" => Poster::all()
         ]);    
     }
 

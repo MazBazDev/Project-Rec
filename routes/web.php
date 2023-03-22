@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PosterController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,5 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name("home");
+
+Route::resource("posters", PosterController::class, [
+    'except' => ['index', 'create', 'store', 'edit', 'update', 'destroy']
+]);
 
 require __DIR__.'/auth.php';

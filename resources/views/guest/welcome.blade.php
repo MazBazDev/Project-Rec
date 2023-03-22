@@ -32,37 +32,14 @@
         <div class="d-flex justify-center">
           <div class="carousel-wrap">
             <div id="owl-spotlight" class="owl-carousel text-center">
-              <a href="#" target="blank" class="item">
-                <div class="card">
-                  <img src="http://placehold.it/300x400">
-                  <p>Lorem</p>
-                </div>
-              </a>
-
-              <a href="#" target="blank" class="item">
-                <div class="card">
-                  <img src="http://placehold.it/300x400">
-                  <p>Lorem</p>
-                </div>
-              </a>
-              <a href="#" target="blank" class="item">
-                <div class="card">
-                  <img src="http://placehold.it/300x400">
-                  <p>Lorem</p>
-                </div>
-              </a>
-              <a href="#" target="blank" class="item">
-                <div class="card">
-                  <img src="http://placehold.it/300x400">
-                  <p>Lorem</p>
-                </div>
-              </a>
-              <a href="#" target="blank" class="item">
-                <div class="card">
-                  <img src="http://placehold.it/300x400">
-                  <p>Lorem</p>
-                </div>
-              </a>
+              @foreach ($posters as $item)
+                <a href="{{ route('posters.show', $item) }}" target="blank" class="item">
+                  <div class="card">
+                    <img src="{{ $item->imgUrl() }}">
+                    <p>{{ $item->name }}</p>
+                  </div>
+                </a>
+              @endforeach
             </div>
           </div>
         </div>

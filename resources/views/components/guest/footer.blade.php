@@ -2,7 +2,7 @@
     <div class="container mb-4">
         <div class="row gap-3">
             <div class="col-md-4">
-                <img class="mb-3" src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website" />
+                <img class="mb-3" src="{{ asset("assets/img/logo_white.svg") }}" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi nobis quidem labore a. Nulla exercitationem adipisci nihil, perspiciatis, saepe quos quidem harum, modi sapiente labore quibusdam rerum officiis consectetur!</p>
             </div>
             <div class="col-md-3">

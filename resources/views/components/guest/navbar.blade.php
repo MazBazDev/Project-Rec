@@ -7,7 +7,7 @@
       <span></span>
 
       <!-- logo -->
-      <a href="#" class="menu-logo">
+      <a href="{{ route("home") }}" class="menu-logo">
         <img src="{{ asset("assets/img/logo_white.svg") }}" alt="">
       </a>
 
@@ -16,7 +16,7 @@
         <ul>
           <!-- logo -->
           <li class="phone-logo">
-            <a href="#">
+            <a href="{{ route("home") }}">
               <img src="{{ asset("assets/img/logo_white.svg") }}" alt="">
             </a>
           </li>
