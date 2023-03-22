@@ -20,24 +20,29 @@
               <img src="{{ asset("assets/img/logo_white.svg") }}" alt="">
             </a>
           </li>
+          @if(setting("sec2.enable", true))
           <li>
             <a href="#section2">La selection</a>
           </li>
+          @endif
+
+          @if(setting("sec3.enable", true))
           <li>
             <a href="#section3">Nous soutenir</a>
           </li>
+          @endif
+
+          @if(setting("sec4.enable", true))
           <li>
             <a href="#section4">Le festival</a>
           </li>
+          @endif
+
+          @if(setting("sec5.enable", true))
           <li>
             <a href="#section5">Partenaires</a>
           </li>
-          <li>
-            <a href="#section6">MakeIt</a>
-          </li>
-          <li>
-            <a href="#section7">FAQ</a>
-          </li>
+          @endif
         </ul>
       </div>
     </div>

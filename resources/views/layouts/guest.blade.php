@@ -1,29 +1,36 @@
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="en">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rec | @yield('title')</title>
+  <link rel="stylesheet" href="{{ asset("assets/css/styles.css") }}">
+  <link rel="stylesheet" href="{{ asset("assets/css/bootstrap/system.css") }}">
+  <link rel="stylesheet" href="{{ asset("assets/css/bootstrap/icons.css") }}">
+  <link rel="stylesheet" href="{{ asset("assets/css/navbar.css") }}">
+  <link rel="stylesheet" href="https://use.typekit.net/dnb0epn.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.9.0/dist/js-confetti.browser.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.2.min.js"  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="{{ asset("assets/css/owl/owl.carousel.min.css") }}">
+  <link rel="stylesheet" href="{{ asset("assets/css/owl/owl.theme.default.min.css") }}">
+  <script src="{{ asset("assets/js/owl/owl.carousel.min.js") }}"></script>
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+</head>
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
-            <div>
-                <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
-            </div>
+<body>
+    <header>
+        @include('components.guest.navbar')
+    </header>
+    @yield('content')
+  
+  
+    @include("components.guest.footer")
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
-            </div>
-        </div>
-    </body>
+    @stack('footer-scripts')
+</body>
 </html>

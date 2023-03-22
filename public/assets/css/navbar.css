@@ -25,6 +25,7 @@ nav {
     -webkit-user-select: none;
     user-select: none;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .menu-logo {

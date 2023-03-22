@@ -9,7 +9,7 @@
                 <h3>Liens utiles</h3>
                 <ul>
                     <li><a href="#onDisplay">Mentions légales</a></li>
-                    <li><a href="#supportUs">Nous soutenir</a></li>
+                    <li><a href="#section3">Nous soutenir</a></li>
                     <li><a href="">Espace presse / pro</a></li>
                     <li><a href="">Devenir partenaire</a></li>
                 </ul>

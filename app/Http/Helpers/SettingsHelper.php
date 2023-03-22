@@ -2,7 +2,6 @@
 
 use RyanChandler\LaravelJsonSettings\Facades\Settings;
 
-
 if (!function_exists('createSettings')) {
     function createSettings(array $settings)
     {   
