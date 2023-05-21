@@ -1,0 +1,52 @@
+{
+    "modal": {
+        "enable": false,
+        "title": "Title",
+        "content": "<p>Content du block<\/p>"
+    },
+    "sec1": {
+        "enable": true,
+        "title": "Title",
+        "link1": {
+            "title": "Title",
+            "url": "https:\/\/qsd.fr"
+        },
+        "link2": {
+            "title": "Title",
+            "url": "https:\/\/qsdaze.fer"
+        },
+        "content": "<p>Content du block<\/p>"
+    },
+    "sec2": {
+        "enable": true,
+        "title": "Title",
+        "link1": {
+            "title": "Title"
+        }
+    },
+    "sec3": {
+        "enable": true,
+        "title": "Nous soutenir",
+        "link1": {
+            "title": "Title"
+        },
+        "api": {
+            "id": "155448"
+        }
+    },
+    "sec4": {
+        "enable": true,
+        "title": "Title",
+        "content": "<p>Content du block<\/p>",
+        "youtube": {
+            "link": "http:\/\/test.com"
+        }
+    },
+    "sec5": {
+        "enable": true,
+        "title": "Title",
+        "link1": {
+            "title": "Title"
+        }
+    }
+}
